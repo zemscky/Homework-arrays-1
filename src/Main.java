@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.StringJoiner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,9 +15,9 @@ public class Main {
         number[0] = 1;
         number[1] = 2;
         number[2] = 3;
-        for (int i = 0; i < number.length;i++) {
-            if (i % 2 ==0);
-            number [i] = number [i] + 1;
+        for (int i = 0; i < number.length; i++) {
+            if (i % 2 == 0) ;
+            number[i] = number[i] + 1;
             System.out.println(number[i]);
         }
         // 2
@@ -54,9 +56,28 @@ public class Main {
         System.out.println(number[2] + ", " + number[1] + ", " + number[0]);
         System.out.println(weights[2] + ", " + weights[1] + ", " + weights[0]);
         System.out.println(year[4] + ", " + year[3] + ", " + year[2] + ", " + year[1] + ", " + year[0]);
+
+        int[] number1 = new int[3]; // number[i] = number[i] + 1;  Задание 4 увеличить все на 1
+        number1[0] = 1;
+        number1[1] = 2;
+        number1[2] = 3;
+        for (int i = number1.length - 1; i >= 0; i--) {
+            System.out.print(number1[i] + ", ");
+        }
+        System.out.println();
+        for (int i = weights.length - 1; i >= 0; i--) {
+            System.out.print(weights[i] + ", ");
+        }
+        System.out.println();
+        for (int i = year.length - 1; i >= 0; i--) {
+            System.out.print(year[i] + ", ");
+        }
+        System.out.println();
+
+
+
+
     }
-
-
 }
 
 
