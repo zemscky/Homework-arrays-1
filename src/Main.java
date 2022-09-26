@@ -24,8 +24,9 @@ public class Main {
         }
         // 3
         System.out.println("Массив 3");
-        int[] yearOfBirth = {1990, 1995, 2000, 2005, 2010};
-        System.out.println(yearOfBirth[0]);
+        int[] year = {1990, 1995, 2000, 2005, 2010};
+        System.out.println(year[0]);
+
 
 
     }
