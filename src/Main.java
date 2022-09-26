@@ -27,7 +27,17 @@ public class Main {
         int[] year = {1990, 1995, 2000, 2005, 2010};
         System.out.println(year[0]);
 
+        System.out.println("Задание 2");
 
+        System.out.println(number[0] +", "+ number[1] +", "+ number[2]);
+        System.out.println(weights[0] +", "+ weights[1] +", "+ weights[2]);
+        System.out.println(year[0] +", "+ year[1] +", "+ year[2]); // 1 метод
 
+        String numerToString = Arrays.toString(number);
+        System.out.println(numerToString);
+        String weightOfString = Arrays.toString(weights);
+        System.out.println(weightOfString);
+        String yearToString = Arrays.toString(year);
+        System.out.println(yearToString); // 2 Метод
     }
 }
