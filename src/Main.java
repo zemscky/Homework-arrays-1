@@ -6,14 +6,16 @@ public class Main {
     }
 
     public static void task() {
-        System.out.println("Задание 1");
+        System.out.println("Задание 1 , 4");
         // 1
         System.out.println("Массив 1");
         int[] number = new int[3];
         number[0] = 1;
         number[1] = 2;
         number[2] = 3;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < number.length;i++) {
+            if (i % 2 ==0);
+            number [i] = number [i] + 1;
             System.out.println(number[i]);
         }
         // 2
@@ -29,9 +31,9 @@ public class Main {
 
         System.out.println("Задание 2");
 // 1 метод
-        System.out.println(number[0] +", "+ number[1] +", "+ number[2]);
-        System.out.println(weights[0] +", "+ weights[1] +", "+ weights[2]);
-        System.out.println(year[0] +", "+ year[1] +", "+ year[2]+", "+ year[3]+", "+ year[4]);
+        System.out.println(number[0] + ", " + number[1] + ", " + number[2]);
+        System.out.println(weights[0] + ", " + weights[1] + ", " + weights[2]);
+        System.out.println(year[0] + ", " + year[1] + ", " + year[2] + ", " + year[3] + ", " + year[4]);
 // 2 метод
         String numberToString = Arrays.toString(number);
         System.out.println(numberToString);
@@ -39,14 +41,22 @@ public class Main {
         System.out.println(weightOfString);
         String yearToString = Arrays.toString(year);
         System.out.println(yearToString);
+// 3 метод
+        Arrays.sort(number, 0, 2);
+        System.out.println(Arrays.toString(number));
+        Arrays.sort(weights, 0, 2);
+        System.out.println(Arrays.toString(weights));
+        Arrays.sort(year, 0, 4);
+        System.out.println(Arrays.toString(year));
 
         System.out.println("Задание 3");
 // 1 метод
-        System.out.println(number[2] +", "+ number[1] +", "+ number[0]);
-        System.out.println(weights[2] +", "+ weights[1] +", "+ weights[0]);
-        System.out.println(year[4] +", "+ year[3] +", "+ year[2]+", "+ year[1]+", "+ year[0]);
-
-
+        System.out.println(number[2] + ", " + number[1] + ", " + number[0]);
+        System.out.println(weights[2] + ", " + weights[1] + ", " + weights[0]);
+        System.out.println(year[4] + ", " + year[3] + ", " + year[2] + ", " + year[1] + ", " + year[0]);
     }
 
+
 }
+
+
